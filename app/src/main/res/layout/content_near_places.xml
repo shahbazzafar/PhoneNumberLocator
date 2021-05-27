@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@color/white"
+    tools:context=".activities.NearPlacesActivity">
+
+    <LinearLayout
+        android:id="@+id/xyz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/myEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="70"
+            android:background="@drawable/square_border"
+
+            android:hint="Search anything else"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/appbar"
+            android:textColorHint="@color/appbar"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtSearch"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_border"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Search"
+            android:textColor="@color/appbar" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRerecyclerUSSDViewNearByPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xyz" />
+</RelativeLayout>
